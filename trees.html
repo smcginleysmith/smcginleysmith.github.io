@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <link href="styles.css" rel="stylesheet">
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+                let redbutton = document.querySelector('#redbutton');
+                let bluebutton = document.querySelector('#bluebutton');
+                let pinkbutton = document.querySelector('#pinkbutton');
+                let yellowbutton = document.querySelector('#yellowbutton');
+                let answer1 = document.querySelector('#answer1');
+                redbutton.addEventListener('click', function(){
+                    redbutton.style.backgroundColor = 'red';
+                    redbutton.style.color = 'black';
+                    answer1.innerHTML = 'Incorrect';
+                });
+                bluebutton.addEventListener('click', function(){
+                    bluebutton.style.backgroundColor = 'green';
+                    bluebutton.style.color = 'black';
+                    answer1.innerHTML = 'Correct! Visit <a href="https://vtstateparks.com/camelshump.html">The Camels Hump Website</a> for more!';
+                });
+                pinkbutton.addEventListener('click', function(){
+                    pinkbutton.style.backgroundColor = 'red';
+                    pinkbutton.style.color = 'black';
+                    answer1.innerHTML = 'Incorrect';
+                });
+                yellowbutton.addEventListener('click', function(){
+                    yellowbutton.style.backgroundColor = 'red';
+                    yellowbutton.style.color = 'black';
+                    answer1.innerHTML = 'Incorrect';
+                });
+                let treesubmit = document.querySelector('#treesubmit');
+                treesubmit.addEventListener('click', function(){
+                    let tree = document.querySelector('#treebox').value;
+                    let treebackground = document.querySelector('#treebox');
+                    let answer2 = document.querySelector('#answer2');
+                    if (tree == 'Maple'){
+                        treebackground.style.backgroundColor = 'green';
+                        answer2.innerHTML = "Correct!";
+                    }
+                    else{
+                        treebackground.style.backgroundColor = 'red';
+                        answer2.innerHTML = "Incorrect :( hint: think syrup";
+                    }
+                });
+                let shale = document.querySelector('#shale');
+                let marble = document.querySelector('#marble');
+                let slate = document.querySelector('#slate');
+                let granite = document.querySelector('#granite');
+                let answer3 = document.querySelector('#answer3');
+                shale.addEventListener('click', function(){
+                    shale.style.backgroundColor = 'red';
+                    shale.style.color = 'black';
+                    answer3.innerHTML = 'Incorrect :( hint: the correct answer is the metamorphosed form of shale';
+                });
+                marble.addEventListener('click', function(){
+                    marble.style.backgroundColor = 'red';
+                    marble.style.color = 'black';
+                    answer3.innerHTML = 'Incorrect';
+                });
+                slate.addEventListener('click', function(){
+                    slate.style.backgroundColor = 'green';
+                    slate.style.color = 'black';
+                    answer3.innerHTML = 'Correct!!';
+                });
+                granite.addEventListener('click', function(){
+                    granite.style.backgroundColor = 'red';
+                    granite.style.color = 'black';
+                    answer3.innerHTML = 'Incorrect';
+                });
+            });
+    </script>
+    <title>Outdoors</title>
+  </head>
+  <body id = "treesbody">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+      <!--https://getbootstrap.com/docs/4.0/components/breadcrumb/-->
+     <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="islandschool.html">Island School</a></li>
+          <li class="breadcrumb-item"><a href="family.html">Family</a></li>
+          <li class="breadcrumb-item active"><a href="trees.html">Outdoors</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        </ol>
+       </nav>
+      <header id = "treesheader">
+          The Great Outdoors &#x1F3D4;
+      </header>
+      <br><h3 style="text-align:center">Sage is a big fan of the outdoors! She loves all things tree-and-rock-related. Take a quick quiz about some of her outdoor adventures below:</h3><br><br>
+      <div class="container align-items-center" style="width:70%; text-align:center">
+          <div class="row">
+            <div class="col-md">
+              <img src="images/camelshump.jpg" class="img-fluid" alt="a picture of camels hump in vt"><br>
+            </div>
+            <div class="col-md">
+               <div class="container">
+                <div class="section">
+
+                    <h4>What iconic Vermont mountain is Sage (age 9) on in the picture?</h4>
+                    <button id="redbutton" class="btn btn-outline-light treebutton">Mt. Mansfield</button>
+                    <button id="bluebutton" class="btn btn-outline-light treebutton">Camels Hump</button>
+                    <button id="pinkbutton" class="btn btn-outline-light treebutton">Mt. Mousilauke</button>
+                    <button id="yellowbutton" class="btn btn-outline-light treebutton">Killington Mountain</button>
+                    <p id="answer1"></p>
+
+                </div>
+
+                <div class="section">
+                    <hr>
+                    <h4>What is Sage's favorite type of tree?</h4>
+                    <input type="text" id="treebox">
+                    <button id ="treesubmit" class="btn btn-outline-light treebutton">Check Answer</button>
+                    <p id="answer2"></p>
+
+                </div>
+
+                <div class="section">
+                    <hr>
+                    <h4>What kind of rock is the floor in Sage's kitchen made of?</h4>
+                    <button id="shale" class="btn btn-outline-light treebutton">Shale</button>
+                    <button id="marble" class="btn btn-outline-light treebutton">Marble</button>
+                    <button id="slate" class="btn btn-outline-light treebutton">Slate</button>
+                    <button id="granite" class="btn btn-outline-light treebutton">Granite</button>
+                    <p id="answer3"></p>
+
+                </div>
+
+                </div>
+            </div>
+          </div>
+    </div>
+    <footer>
+      <a href="#"> Return to Top</a><br>
+      <a href="mailto:smsjunk2@gmail.com">Contact Me</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+                let mica = document.querySelector('#mica');
+                let ezra = document.querySelector('#ezra');
+                let sage = document.querySelector('#sage');
+                let sarah = document.querySelector('#sarah');
+                let dan = document.querySelector('#dan');
+                let bio = document.querySelector('#bio');
+                mica.addEventListener('click', function(){
+                    bio.innerHTML = 'Bio:<br>Favorite type of sandwich: BLT <br>Favorite color: green <br> Best dad joke: "what has 1 leg and doesn’t run ? A one-legged rat" <br> Fatal flaw: "none. im perfect."';
+                });
+                ezra.addEventListener('click', function(){
+                    bio.innerHTML = 'Bio:<br>Favorite type of sandwich: peanut butter and jelly <br>Favorite color: red <br> Best dad joke: "I don’t usually tell dad jokes but when I do he usually laughs." <br> Fatal flaw: inability to clean room';
+                });
+                sage.addEventListener('click', function(){
+                    bio.innerHTML = 'Bio:<br>Favorite type of sandwich: avocado breakfast burrito <br>Favorite color: yellow and sage green (she is indecisive) <br> Best dad joke: "I tried to catch fog ... sadly I mist" <br> Fatal flaw: hates using her blinker';
+                });
+                sarah.addEventListener('click', function(){
+                    bio.innerHTML = 'Bio:<br>Favorite type of sandwich: brie and apple <br>Favorite color: blue <br> Best dad joke: "don’t trust atoms. they make up everything!" <br> Flatal flaw: does dishes with gloves on';
+                });
+                dan.addEventListener('click', function(){
+                    bio.innerHTML = 'Bio:<br>Favorite type of sandwich: turkey and avocado <br>Favorite color: green <br> Best dad joke: "what is a bee’s favorite hairstyle? a buzz cut!" <br> Fatal flaw: wears sunscreen in the winter';
+                });
+      });
+    </script>
+    <title>Family</title>
+  </head>
+  <body id = "familybody">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+       <!--https://getbootstrap.com/docs/4.0/components/breadcrumb/-->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="islandschool.html">Island School</a></li>
+          <li class="breadcrumb-item active"><a href="family.html">Family</a></li>
+          <li class="breadcrumb-item"><a href="trees.html">Outdoors</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        </ol>
+      </nav>
+      <header id = "familyheader">
+          Meet the Fam! &#x1F49C;
+      </header><br><br>
+      <h3 style="text-align:center">Click on any of the buttons below to learn more about each person!</h3>
+      <div class="container align-items-center" style="width:70%; text-align:center">
+        <br>
+        <div class="row">
+          <div class="col">
+            <img src="images/siblingsHD.JPG" class="img-fluid" alt="Sage and her brothers laughing">
+          </div>
+          <div class="col">
+            <img src="images/parents.png" class="img-fluid" alt="Sage and her parents on senior night">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <h3>Siblings</h3>
+          </div>
+          <div class="col">
+            <h3>Parents</h3>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark" id="mica">Mica (left)</button>
+              <button type="button" class="btn btn-outline-dark" id="sage">Sage (center)</button>
+              <button type="button" class="btn btn-outline-dark" id="ezra">Ezra (right)</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark" id="dan">Dan (left)</button>
+              <button type="button" class="btn btn-outline-dark" id="sarah">Sarah (right)</button>
+            </div>
+        </div>
+        <br><h5 id="bio">Bio will display here!</h5>
+      </div>
+      <footer>
+        <a href="#"> Return to Top</a><br>
+        <a href="mailto:smsjunk2@gmail.com">Contact Me</a>
+      </footer>
+  </body>
+</html>

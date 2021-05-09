@@ -1,0 +1,96 @@
+
+.treebutton {
+    color:#417043;
+    outline:#417043;
+}
+
+.cardtitle {
+    text-align: center;
+    background: #fcdec5;
+}
+
+.isbio {
+    text-align: center;
+    font-size: 20px;
+}
+
+header {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size:8vmin;
+}
+
+body {
+    font-family: "Times New Roman";
+}
+
+a {
+    color: #3d78a6;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #e9ecef;
+    color: black;
+    padding: 10px;
+}
+
+h3 {
+    font-size:7vmin;
+}
+
+h4 {
+    font-size:6vmin;
+}
+
+h5 {
+    font-size: 5vmin;
+}
+
+button {
+    background: white;
+    color: black;
+}
+#indexbody {
+    background: #fcf5d9;
+    color: #3d78a6;
+    text-align: center;
+}
+
+#indexheader {
+    color: #3d78a6;
+    background: #fcdec5;
+}
+
+
+#ISheader {
+    color: #c2efff;
+    background: #2c3966;
+}
+
+#ISbody {
+    color: #2c3966;
+    background: #c2efff;
+}
+
+#familyheader {
+    color: #f2e0ff;
+    background: #664080;
+}
+
+#familybody {
+    color: #664080;
+    background: #f2e0ff;
+}
+#treesheader {
+    color: #bcd6b4;
+    background: #417043;
+}
+
+#treesbody {
+    color: #417043;
+    background: #bcd6b4;
+}
